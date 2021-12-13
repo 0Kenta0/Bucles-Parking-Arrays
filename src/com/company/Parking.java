@@ -7,6 +7,7 @@ import java.util.Objects;
 import java.util.Random;
                                                 //Optimizar monedas y billetes que metes para no meter los que son 0. Crear consultor buscando por (plaza o matricula) y te de el opuesto. Si esta vacia la plaza decirlo y si no hay matricula decirlo.
 public class Parking {
+    //Bruno es un pt
     Random rn = new Random();
     public String plazas[] = new String[25];
     public Double pgo[] = new Double[10001];
