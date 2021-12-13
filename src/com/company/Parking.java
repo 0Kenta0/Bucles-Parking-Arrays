@@ -174,7 +174,7 @@ public class Parking {
                                 camb[i] = Double.parseDouble(numberFormat.format(cambio / i));
                                 cCamb = cambio % i;
                             }else {
-                                camb[i] = Double.parseDouble(numberFormat.format(cCamb / i));
+                                camb[i] = Double.parseDouble(numberFormat.format(cCamb / i));   //Hola soy un cambio. Modificacion comprobacion commits
                                 cCamb = cCamb % i;
                             }
                             if(camb[i]!=0){
