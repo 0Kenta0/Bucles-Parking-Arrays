@@ -73,7 +73,7 @@ public class Main {
         obj.setupPlazas();
 
         while(peticion!=0) {
-            peticion = Integer.parseInt(JOptionPane.showInputDialog("Que quieres hacer en el parking?\n1->Entrar\n2->Salir\n3-->Aforo\n4-->Reseteo del parking\n0->Acabar programa"));
+            peticion = Integer.parseInt(JOptionPane.showInputDialog("Que quieres hacer en el parking?\n1->Meter vehículo\n2->Sacar vehículo\n3-->Aforo\n4-->Reseteo del parking\n5-->Consultor\n0->Acabar programa"));
             switch (peticion) {
                 case 1:
                     obj.entrada();
@@ -87,11 +87,14 @@ public class Main {
                 case 4:
                     obj.setupPlazas();
                     break;
+                case 5:
+                    obj.consultor();
+                    break;
                 case 0:
-                    System.out.println("Bye, bye");
+                    System.out.println("Bye, bye ^^");
                     break;
                 default:
-                    System.out.println("Esa acción no está registrada.");
+                    System.out.println("*****Esa acción no está registrada*****");
             }
         }
     }
